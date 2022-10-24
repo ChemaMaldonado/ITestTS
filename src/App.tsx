@@ -1,10 +1,13 @@
-const App: React.FC = () => {
+import { AppRoutes } from './routes/AppRoutes'
+import { Layout } from './components/Layout'
+
+const App = (): JSX.Element => {
   return (
-    <div className='min-h-screen flex justify-center items-center'>
-      <h1 className='text-7xl font-bold text-blue-600'>
-        ReactTSTest
-      </h1>
-    </div>
+    <>
+      <Layout>
+        <AppRoutes />
+      </Layout>
+    </>
   )
 }
 
